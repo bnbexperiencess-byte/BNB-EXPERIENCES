@@ -1,0 +1,103 @@
+/* Estilo Básico */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo para a Área de Filtros */
+.filtros {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.filtros button {
+    background-color: #fff;
+    color: #007bff;
+    border: 2px solid #007bff;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+.filtros button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Estilo para o Catálogo de Experiências (Usando CSS Grid) */
+.catalogo {
+    display: grid;
+    /* Cria colunas responsivas: 
+       Mínimo 300px, máximo 1 fração do espaço */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Estilo para o Cartão Individual */
+.experiencia-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.experiencia-card:hover {
+    transform: translateY(-5px); /* Efeito sutil ao passar o mouse */
+}
+
+.experiencia-card h3 {
+    color: #007bff;
+    margin-top: 0;
+}
+
+.experiencia-card p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.categoria {
+    display: inline-block;
+    background-color: #e9ecef;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.preco {
+    font-size: 1.1em;
+    color: #28a745;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    color: #777;
+    font-size: 0.8em;
+}
