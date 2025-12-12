@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Experiências</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🌟 Meu Catálogo de Experiências</h1>
+        <p>Organize e filtre suas atividades, passeios e serviços favoritos.</p>
+    </header>
+
+    <main>
+        <section class="filtros">
+            <h2>Filtre por Categoria:</h2>
+            <button onclick="filtrarExperiencias('Todos')">Todos</button>
+            <button onclick="filtrarExperiencias('Atividade Esportiva')">Atividades Esportivas</button>
+            <button onclick="filtrarExperiencias('Passeio/Aventura')">Passeios e Aventuras</button>
+            <button onclick="filtrarExperiencias('Serviço')">Serviços</button>
+        </section>
+        
+        <hr>
+
+        <section id="catalogo-experiencias" class="catalogo"></section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Parceiro de Programação</p>
+    </footer>
+
+    <script>
+        // Esta é a lista (array) que guarda todos os seus dados.
+        // Mais tarde, esta informação viria de um banco de dados real.
+        const experiencias = [
+            {
+                id: 1,
+                nome: "Aula de Kitesurf para Iniciantes",
+                categoria: "Atividade Esportiva",
+                local: "Praia do Forte",
+                descricao: "Introdução completa ao Kitesurf, segurança e primeiros voos.",
+                preco: 450.00
+            },
+            {
+                id: 2,
+                nome: "Massagem Terapêutica Relaxante",
+                categoria: "Serviço",
+                local: "Em domicílio ou Studio",
+                descricao: "Sessão de 60 minutos focada em alívio de tensão e relaxamento profundo.",
+                preco: 180.00
+            },
+            {
+                id: 3,
+                nome: "Trilha Guiada ao Pico da Pedra",
+                categoria: "Passeio/Aventura",
+                local: "Serra da Mantiqueira",
+                descricao: "Caminhada de médio-alto esforço com guia experiente e vistas incríveis.",
+                preco: 120.00
+            },
+            {
+                id: 4,
+                nome: "Personal Chef Jantar Italiano",
+                categoria: "Serviço",
+                local: "Sua residência",
+                descricao: "Menu degustação italiano completo, com ingredientes frescos e serviço à mesa.",
+                preco: 800.00
+            },
+            {
+                id: 5,
+                nome: "Mergulho de Cilindro (Batismo)",
+                categoria: "Passeio/Aventura",
+                local: "Ilha Grande",
+                descricao: "Primeiro mergulho com instrutor credenciado, não requer experiência prévia.",
+                preco: 550.00
+            },
+            {
+                id: 6,
+                nome: "Partida de Tênis em Quadra Rápida",
+                categoria: "Atividade Esportiva",
+                local: "Clube da Cidade",
+                descricao: "Reserva de quadra para 2 horas de jogo. Apenas para jogadores intermediários.",
+                preco: 80.00
+            }
+        ];
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
